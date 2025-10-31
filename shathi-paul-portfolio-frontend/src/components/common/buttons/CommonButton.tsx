@@ -9,7 +9,7 @@ const CommonButton = ({ text, onClick }: ICommonButton) => {
       onClick={onClick}
       className="group relative overflow-hidden text-sm font-medium shadow-md rounded-md bg-secondary text-primary border-2 border-primary py-2 px-3 lg:px-6 duration-700 z-30"
     >
-      <span className="hidden relative md:inline-flex items-center">
+      <span className="relative md:inline-flex items-center">
         {text.split("").map((char, index) => (
           <span
             key={index}

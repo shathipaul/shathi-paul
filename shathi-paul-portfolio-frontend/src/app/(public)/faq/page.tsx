@@ -11,19 +11,21 @@ const FAQPage = async () => {
   const faqData = await getAllData("faq.json");
   return (
     <OpacityAnimation>
-      <div className="py-10 md:py-28 relative z-30">
+      <div className="pt-20 lg:pt-28 pb-10 relative z-30">
         <CommonTitle text="Frequently Asked Questions" />
         <AccordionCard faqData={faqData} />
 
-        <div className="p-12 bg-secondary shadow-lg border-2 rounded-xl w-1/2 mx-auto">
-          <h4 className="text-center text-3xl mb-6">Still Have Questions?</h4>
-          <div className="grid grid-cols-2 items-center gap-10">
+        <div className="p-6 md:p-12 bg-secondary shadow-lg border-2 rounded-xl md:w-2/3 lg:w-1/2 mx-auto">
+          <h4 className="text-center text-xl md:text-3xl mb-6">
+            Still Have Questions?
+          </h4>
+          <div className="grid md:grid-cols-2 items-center gap-4 md:gap-8">
             <Link
               href={
                 "https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
               }
             >
-              <Button_v4 text="Let's talk" />
+              <Button_v4 text="Let's talk" className="w-full" />
             </Link>
 
             <CommonButton text="Send a message" />

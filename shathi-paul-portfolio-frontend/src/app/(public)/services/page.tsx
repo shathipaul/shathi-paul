@@ -114,7 +114,7 @@ const ServicePage = () => {
                 <h3 className="text-xl font-semibold mb-2">{data.title}</h3>
                 <p className="text-sm">{data.description}</p>
               </div>
-              <div className="bg-primary/10 p-4 rounded-lg flex gap-4 justify-center items-center">
+              <div className="bg-primary/10 p-4 rounded-lg flex gap-2 md:gap-4 justify-center items-center">
                 <span className="text-sm text-gold">Starting from</span>
                 <span className="font-semibold text-2xl italic text-primary">
                   {" "}

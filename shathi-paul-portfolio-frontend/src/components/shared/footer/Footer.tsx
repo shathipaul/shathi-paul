@@ -26,7 +26,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer aria-label="Footer" className="py-6">
+    <footer aria-label="Footer" className="py-6 px-4">
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
         <p className="text-sm">
           © 2025{" "}
