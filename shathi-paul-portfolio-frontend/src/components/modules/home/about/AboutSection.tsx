@@ -2,7 +2,6 @@ import Image from "next/image";
 import myImage from "@/assets/images/shathi.jpg";
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import CommonButton from "@/components/common/buttons/CommonButton";
 import { Button_v4 } from "@/components/common/buttons/Button_v4";
 
 const AboutSection = () => {

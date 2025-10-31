@@ -6,7 +6,7 @@ import { Fragment } from "react";
 
 const ProjectCards = ({ projectData }: { projectData: IProjects[] }) => {
   return (
-    <div className="grid md:grid-cols-2 gap-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       {projectData.map((card: IProjects, i: number) => (
         <div key={i} className="flex flex-col">
           <Fragment>
@@ -34,8 +34,8 @@ const ProjectCards = ({ projectData }: { projectData: IProjects[] }) => {
               </div>
             </div>
             <div className="flex flex-col justify-between gap-6 mt-6 px-4">
-              <h2 className="text-xl text-primary">{card.title}</h2>
-              <h6 className="text-xs whitespace-nowrap text-primary">
+              <h2 className="text-lg md:text-xl text-primary">{card.title}</h2>
+              <h6 className="text-xs md:whitespace-nowrap text-primary">
                 {card.stack}
               </h6>
             </div>

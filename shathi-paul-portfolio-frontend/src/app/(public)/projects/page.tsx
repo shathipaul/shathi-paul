@@ -8,7 +8,7 @@ const ProjectsPage = async () => {
 
   return (
     <OpacityAnimation>
-      <div className="py-10 md:py-28">
+      <div className="pt-20 lg:pt-28 pb-10">
         <CommonTitle text="My Awesome projects" />
         <ProjectCards projectData={projectData} />
       </div>
