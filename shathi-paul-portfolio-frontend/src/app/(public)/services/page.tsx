@@ -1,7 +1,6 @@
 import { Button_v4 } from "@/components/common/buttons/Button_v4";
 import CommonTitle from "@/components/common/CommonTitle";
 import OpacityAnimation from "@/components/common/OpacityAnimation";
-import Image from "next/image";
 import Link from "next/link";
 
 const ServicePage = () => {

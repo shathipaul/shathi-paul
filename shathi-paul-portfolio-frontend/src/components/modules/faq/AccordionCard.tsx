@@ -16,10 +16,10 @@ const AccordionCard = ({ faqData }: { faqData: IFAQData[] }) => {
     >
       {faqData.map((data, index) => (
         <AccordionItem key={index} className="my-2" value={`item-${index + 1}`}>
-          <AccordionTrigger className="md:text-lg hover:no-underline">
+          <AccordionTrigger className="lg:text-lg hover:no-underline">
             {data.ques}
           </AccordionTrigger>
-          <AccordionContent className="md:text-base">
+          <AccordionContent className="lg:text-base">
             {data.ans}
           </AccordionContent>
         </AccordionItem>

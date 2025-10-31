@@ -13,7 +13,7 @@ export const Button_v4 = ({ text, ...rest }: ButtonProps) => {
       {...rest}
       className={cn(
         "group relative overflow-hidden rounded-lg bg-gradient-to-tr duration-500 ease-in-out active:translate-y-0.5 active:scale-100",
-        "active:shadow-none from-[#3e2325] to-[#251a15] text-secondary ",
+        "active:shadow-none from-primary to-gold text-secondary ",
         rest.className
       )}
     >

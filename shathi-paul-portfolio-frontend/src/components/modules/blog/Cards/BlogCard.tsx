@@ -18,70 +18,92 @@ const BlogCard = ({ blogData }: { blogData: IBlogData[] }) => {
     );
   };
   return (
-    <div>
+    <div className="xl:w-3/4 mx-auto space-y-12">
       {blogData?.map((data, index) => (
-        <div
+        <article
           key={index}
-          className="md:flex gap-4 my-10 md:mx-10 bg-secondary shadow-md relative z-30"
+          className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-2xl overflow-hidden relative z-30 bg-gradient-to-br from-white/60 to-white/30 backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:translate-y-[-4px]"
         >
-          {/* Card Image */}
+          {/* Image side */}
           <Link
             href={`/blog/${data.blogId}`}
-            className="w-full h-full md:w-[400px] md:h-[250px] lg:w-[640px] lg:h-[450px] object-cover"
+            className="w-full h-full object-cover"
           >
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               src={data.image}
-              alt="image"
-              width={500}
-              height={500}
+              alt={data.title}
+              width={1200}
+              height={800}
               loading="lazy"
             />
           </Link>
-          {/* Card Text */}
-          <div className="p-4 relative">
-            <div className="flex justify-between items-center mb-4 lg:mb-6">
-              <div className="flex items-center gap-2">
-                <div className="w-[50px] r">
-                  <Image className="rounded-full" src={adminImg} alt="" />
-                </div>
-                <div className="">
-                  <div className="flex items-center gap-2">
+
+          {/* Content side */}
+          <div className="p-6 lg:col-span-2 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Image
+                  src={adminImg}
+                  alt="Admin"
+                  width={44}
+                  height={44}
+                  className="rounded-full object-cover"
+                />
+                <div>
+                  <div className="flex items-center gap-2 text-sm font-medium">
                     <span>Admin</span>
                     <PiCrownSimpleFill />
                   </div>
-                  <div className="text-sm">
-                    <span>{data.date}</span> {"."} <span>{data.time}</span>
+                  <div className="text-xs text-muted-foreground">
+                    <span>{data.date}</span>
+                    <span className="mx-1">•</span>
+                    <span>{data.time}</span>
                   </div>
                 </div>
               </div>
-              <div>{/* <SocialIcon /> */}</div>
+
+              <Link href={`/blog/${data.blogId}`}>
+                <h2 className="mb-3 text-2xl leading-snug font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-gold">
+                  {data.title}
+                </h2>
+              </Link>
+
+              <h3 className="mb-4 text-lg">{data.shortDes}</h3>
+              <p>
+                When most people think about website performance, they think
+                about “speed” as a technical detail. Something nice to have, but
+                not mission-critical....
+              </p>
             </div>
-            <Link href={`/articles/${data.blogId}`}>
-              <h2 className="capitalize italic text-[24px] mb-4">
-                {data.title}
-              </h2>
-              <p className="mb-4">{data.shortDes}...</p>
-            </Link>
-            <div className="lg:absolute bottom-4 w-[90%] m-auto">
-              <div className="flex justify-between items-center border-t border-semiGray ">
-                <div className="flex gap-4 mt-2">
-                  <p>0 vue</p>
-                  <p>0 comments</p>
-                </div>
-                <div className="flex justify-end text-lg text-red-700 mt-2">
-                  <button onClick={() => toggleLike(data.blogId)}>
-                    {likedArticles.includes(data.blogId) ? (
-                      <FaHeart />
-                    ) : (
-                      <FaRegHeart />
-                    )}
-                  </button>
-                </div>
+
+            <div className="mt-4">
+              <div className="flex items-center justify-between border-t pt-3 text-sm px-4">
+                <button
+                  aria-label={`like-${data.blogId}`}
+                  onClick={() => toggleLike(data.blogId)}
+                  className={`p-2 rounded-full transition-transform duration-200 ${
+                    likedArticles.includes(data.blogId)
+                      ? "bg-red-100 text-red-600 scale-110"
+                      : " text-primary hover:scale-105"
+                  }`}
+                >
+                  {likedArticles.includes(data.blogId) ? (
+                    <FaHeart />
+                  ) : (
+                    <FaRegHeart />
+                  )}
+                </button>
+                <Link
+                  href={`/blog/${data.blogId}`}
+                  className="inline-flex items-end text-sm text-primary font-medium animate-pulse animate-infinite duration-700"
+                >
+                  Read more →
+                </Link>
               </div>
             </div>
           </div>
-        </div>
+        </article>
       ))}
     </div>
   );
