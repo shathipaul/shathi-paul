@@ -11,7 +11,7 @@ const ServicePage = () => {
       title: "Landing Page",
       description:
         "Patient Care Optimization Medical Diagnosis Drug Discovery Healthcare Analytics",
-      price: "500",
+      price: "100",
       features: [
         "Clean, modern design",
         "Fast loading & responsive",
@@ -29,7 +29,7 @@ const ServicePage = () => {
       title: "Business Page",
       description:
         "Predictive Maintenance Quality Control Supply Chain Optimization Process Automation",
-      price: "500",
+      price: "400",
       features: [
         "About, services, contact pages",
         "SEO-friendly structure",
@@ -99,9 +99,9 @@ const ServicePage = () => {
   ];
   return (
     <OpacityAnimation>
-      <div className="py-10 md:py-28">
+      <div className="pt-20 lg:pt-28 pb-10">
         <CommonTitle text="My Awesome Services" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 p">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p">
           {serviceData.map((data, index) => (
             <div
               key={index}
@@ -114,7 +114,19 @@ const ServicePage = () => {
                 <h3 className="text-xl font-semibold mb-2">{data.title}</h3>
                 <p className="text-sm">{data.description}</p>
               </div>
-              <span className="">Starting from ${data.price}</span>
+              <div className="bg-primary/10 p-4 rounded-lg flex gap-4 justify-center items-center">
+                <span className="text-sm text-gold">Starting from</span>
+                <span className="font-semibold text-2xl italic text-primary">
+                  {" "}
+                  ${data.price}
+                </span>
+              </div>
+              <ul className="leading-5 text-sm list-disc pl-5 space-y-1">
+                {data.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+
               <Link
                 href={
                   "https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
@@ -122,12 +134,6 @@ const ServicePage = () => {
               >
                 <Button_v4 text="Get Started" className="w-full" />
               </Link>
-
-              <ul className="leading-5 text-sm list-disc pl-5 space-y-1">
-                {data.features.map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
