@@ -26,7 +26,7 @@ export function GradualSpacing({
               duration: 0.5,
               delay: delayOffset + i * 0.05,
             }}
-            className="text-2xl md:text-4xl xl:text-6xl text-center md:leading-[60px] xl:leading-[80px] leadingText"
+            className="text-xl md:text-4xl xl:text-6xl text-center md:leading-[60px] xl:leading-[80px] leadingText"
           >
             {char === " " ? <span>&nbsp;</span> : char}
           </motion.p>

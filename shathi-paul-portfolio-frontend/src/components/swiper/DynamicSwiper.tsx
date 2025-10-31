@@ -91,7 +91,7 @@ const DynamicSwiper = ({
         <div className="absolute top-0 w-full z-10 md:px-14">
           {/* grid: left placeholder, center title, right nav */}
           <div className="grid grid-cols-[1fr_auto] items-center">
-            <h3 className="w-full text-3xl md:text-4xl lg:text-5xl text-center tracking-wider justify-self-center">
+            <h3 className="w-full text-2xl md:text-4xl lg:text-5xl md:text-center tracking-wider md:justify-self-center">
               {title}
             </h3>
             <div className="justify-self-end">

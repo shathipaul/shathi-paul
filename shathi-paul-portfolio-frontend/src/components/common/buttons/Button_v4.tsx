@@ -20,7 +20,7 @@ export const Button_v4 = ({ text, ...rest }: ButtonProps) => {
       <span className="absolute size-0 rounded-lg bg-secondary opacity-10 transition-all duration-300 ease-out group-hover:size-full"></span>
       <span className="relative z-30">
         <span className="group relative overflow-hidden text-sm shadow-md rounded-md py-2 px-3 lg:px-6 duration-700 z-30">
-          <span className="hidden relative md:inline-flex items-center">
+          <span className="relative md:inline-flex items-center">
             {text.split("").map((char, index) => (
               <span
                 key={index}
