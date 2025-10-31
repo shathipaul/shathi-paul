@@ -1,0 +1,50 @@
+[
+  {
+    "ques": "What services do you offer as a full-stack Next.js developer?",
+    "ans": "I build high-performance, scalable web applications using Next.js, React, Node.js, and modern backend technologies. This includes frontend development, backend APIs, database design, UI/UX implementation, performance optimization, and security hardening."
+  },
+  {
+    "ques": "Which technologies do you use to build web apps?",
+    "ans": "I work with Next.js, TypeScript, Tailwind CSS, and Node.js for backends. For databases, I offer both SQL (PostgreSQL + Prisma) and NoSQL (MongoDB + Mongoose) options, depending on your project’s needs."
+  },
+  {
+    "ques": "Will my website or app be SEO optimized?",
+    "ans": "Yes. I apply proper on-page SEO, meta tags, clean routing, and structured data. For apps that use SSR or SSG, I ensure they’re optimized for fast load times and high Lighthouse scores."
+  },
+  {
+    "ques": "How much does a full-stack developer cost for a project?",
+    "ans": "Project budgets vary depending on complexity, integrations, and urgency. Most professional builds range from mid four-figures to five-figures, depending on scope. After a quick discovery call, I provide a transparent estimate."
+  },
+  {
+    "ques": "How long does it take to build a website or application?",
+    "ans": "Typical project timelines are 3–8 weeks, depending on features and integrations. I don’t accept unrealistic deadlines, as quality and stability are priorities. After understanding your requirements, I provide a clear timeline."
+  },
+  {
+    "ques": "Do you provide responsive, mobile-friendly layouts?",
+    "ans": "Yes. Every build is responsive across devices, including Desktop, Tablet, Mobile,High-resolution displays. I use modern CSS techniques and frameworks to ensure a seamless experience for all devices."
+  },
+  {
+    "ques": "Can you handle deployment and hosting setup?",
+    "ans": "Yes, I handle deployment on Vercel, Netlify, or any preferred hosting platform. I also set up environment variables, connect your domain, and make sure everything runs smoothly after launch."
+  },
+  {
+    "ques": "What if I need ongoing maintenance or future updates?",
+    "ans": "I offer long-term maintenance and feature update plans for clients who want consistent support after project delivery. We can discuss a monthly retainer or flexible hourly plan based on your needs."
+  },
+  {
+    "ques": "Do you work with agencies or white-label projects?",
+    "ans": "Yes, absolutely. I regularly collaborate with agencies and teams that need a reliable developer for ongoing or white-label work. I follow clean coding practices, maintain confidentiality, and adapt to your workflow if needed."
+  },
+  {
+    "ques": "How long does it take to build a website or application?",
+    "ans": "Typical project timelines are 3–8 weeks, depending on features and integrations. I don’t accept unrealistic deadlines, as quality and stability are priorities."
+  },
+  {
+    "ques": "Can you build scalable backend APIs?",
+    "ans": "Yes. I use Node.js, Express, Prisma, and secure database architectures to create robust APIs that scale with user growth and handle sensitive data operations safely."
+  },
+  {
+    "ques": "Do you offer website redesigns?",
+    "ans": "Absolutely. I specialize in modernizing outdated codebases to improve speed, UX, SEO performance, and security."
+  }
+]

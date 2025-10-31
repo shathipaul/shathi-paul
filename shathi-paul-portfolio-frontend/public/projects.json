@@ -1,0 +1,46 @@
+[
+  {
+    "img": "https://i.ibb.co.com/bgPP083W/travel-buddy.png",
+    "title": "Travel Buddy - Travel Management Application",
+    "stack": "|| TypeScript | Next.js | Framer Motion | Node.js |  MongoDB ||",
+
+    "description": "",
+    "link": "https://travel-buddy-demo.vercel.app/"
+  },
+  {
+    "img": "https://i.ibb.co.com/JwYj9kkm/wedding-photograpy.png",
+    "title": "Georgia Photography Portfolio",
+    "stack": "|| React | Redux | Tailwind.CSS | Node.js | MongoDB ||",
+    "description": "",
+    "link": "https://wedding-photograpy-website.vercel.app/"
+  },
+  {
+    "img": "https://i.ibb.co.com/KxGwj71k/tech-mart.webp",
+    "title": "Tech Mart - Tech E-commerce Application",
+    "stack": "|| TypeScript | Next.js | Node.js | Tailwind.CSS",
+    "description": "",
+    "link": "https://tech-mart-co.vercel.app/"
+  },
+  {
+    "img": "https://i.ibb.co.com/7dzMkGDy/optimalfolio.png",
+    "title": "Optimalfolio - Financial Advising Agency",
+    "stack": "|| React | Tailwind.CSS | Node.js ||",
+    "description": "",
+    "link": "https://optimal-folios.vercel.app/"
+  },
+  {
+    "img": "https://i.ibb.co.com/B5mWLdR4/journalist-portfolio.png",
+    "title": "Jessica Pariston - Personal Blog Website",
+    "stack": "|| React | Redux | Tailwind.CSS | Node.js | Express | MongoDB ||",
+    "description": "",
+    "link": "https://journalist-portfolio-website.vercel.app/"
+  },
+
+  {
+    "img": "https://i.ibb.co.com/hRcV1H3R/tap-dolphin.png",
+    "title": "Tap Dolphin - App Landing Page",
+    "stack": "|| HTML | Tailwind.CSS | JavaScript ||",
+    "description": "",
+    "link": "https://tap-dolphin.vercel.app/"
+  }
+]
