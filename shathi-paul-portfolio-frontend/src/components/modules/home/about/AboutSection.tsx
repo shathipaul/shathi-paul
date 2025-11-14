@@ -90,7 +90,14 @@ const AboutSection = () => {
           and perform even better.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-center mt-6 relative z-30">
-          <Button_v4 text="Hire me" />
+          <a
+            href="https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Schedule a meeting about your website project with Shathi Paul"
+          >
+            <Button_v4 text="Let's discuss an idea" />
+          </a>
         </div>
       </div>
     </div>

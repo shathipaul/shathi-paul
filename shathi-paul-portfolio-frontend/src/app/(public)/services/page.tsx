@@ -1,7 +1,6 @@
 import { Button_v4 } from "@/components/common/buttons/Button_v4";
 import CommonTitle from "@/components/common/CommonTitle";
 import OpacityAnimation from "@/components/common/OpacityAnimation";
-import Link from "next/link";
 
 const ServicePage = () => {
   const serviceData = [
@@ -24,6 +23,24 @@ const ServicePage = () => {
       },
     },
     {
+      //  logo: num4,
+      title: "Blog Website",
+      description:
+        "Customer Behavior Analysis Inventory Optimization Personalized Marketing Demand Forecasting",
+      price: "300",
+      features: [
+        "Modern blog layout",
+        "SEO-ready structure",
+        "Category & tags system",
+        "Easy content management",
+      ],
+      position: {
+        root: "top-[600px] md:top-auto md:bottom-4 left-0 md:left-auto md:right-0 lg:right-24 xl:right-48",
+        logo: "right-0 top-0 md:bottom-16",
+        card: "right-0 md:right-6 bottom-0 md:bottom-4 xl:bottom-0",
+      },
+    },
+    {
       //  logo: num2,
       title: "Business Page",
       description:
@@ -39,6 +56,25 @@ const ServicePage = () => {
         root: "top-[200px] md:top-auto md:bottom-0 left-0 md:left-0 lg:left-20 xl:left-64",
         logo: "right-0 md:left-0 top-0 md:bottom-16",
         card: "right-0 md:right-10 bottom-0 md:bottom-5 lg:bottom-0",
+      },
+    },
+
+    {
+      //  logo: num5,
+      title: "Service Website",
+      description:
+        "Customer Behavior Analysis Inventory Optimization Personalized Marketing Demand Forecasting",
+      price: "500",
+      features: [
+        "Service listings & details",
+        "Booking/contact forms",
+        "SEO-optimized pages",
+        "Testimonials & reviews",
+      ],
+      position: {
+        root: "top-[800px] md:top-0 left-0 md:left-auto md:right-0",
+        logo: "left-0 top-0",
+        card: "left-0 md:left-auto md:right-12 bottom-0 md:top-16",
       },
     },
     {
@@ -57,42 +93,6 @@ const ServicePage = () => {
         root: "top-[400px] md:top-1/2 lg:top-20 md:-translate-y-1/2 lg:-translate-y-0 left-0 md:left-1/2 md:-translate-x-1/2",
         logo: "left-0 top-0 md:bottom-16 md:right-0",
         card: "left-0 md:right-0 bottom-0 md:top-16",
-      },
-    },
-    {
-      //  logo: num4,
-      title: "Blog Website",
-      description:
-        "Customer Behavior Analysis Inventory Optimization Personalized Marketing Demand Forecasting",
-      price: "500",
-      features: [
-        "Modern blog layout",
-        "SEO-ready structure",
-        "Category & tags system",
-        "Easy content management",
-      ],
-      position: {
-        root: "top-[600px] md:top-auto md:bottom-4 left-0 md:left-auto md:right-0 lg:right-24 xl:right-48",
-        logo: "right-0 top-0 md:bottom-16",
-        card: "right-0 md:right-6 bottom-0 md:bottom-4 xl:bottom-0",
-      },
-    },
-    {
-      //  logo: num5,
-      title: "Service Website",
-      description:
-        "Customer Behavior Analysis Inventory Optimization Personalized Marketing Demand Forecasting",
-      price: "500",
-      features: [
-        "Service listings & details",
-        "Booking/contact forms",
-        "SEO-optimized pages",
-        "Testimonials & reviews",
-      ],
-      position: {
-        root: "top-[800px] md:top-0 left-0 md:left-auto md:right-0",
-        logo: "left-0 top-0",
-        card: "left-0 md:left-auto md:right-12 bottom-0 md:top-16",
       },
     },
   ];
@@ -126,13 +126,14 @@ const ServicePage = () => {
                 ))}
               </ul>
 
-              <Link
-                href={
-                  "https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
-                }
+              <a
+                href="https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Schedule a meeting about your website project with Shathi Paul"
               >
                 <Button_v4 text="Get Started" className="w-full" />
-              </Link>
+              </a>
             </div>
           ))}
         </div>

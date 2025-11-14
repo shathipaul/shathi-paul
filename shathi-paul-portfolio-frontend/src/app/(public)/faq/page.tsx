@@ -3,9 +3,7 @@ import CommonButton from "@/components/common/buttons/CommonButton";
 import CommonTitle from "@/components/common/CommonTitle";
 import OpacityAnimation from "@/components/common/OpacityAnimation";
 import AccordionCard from "@/components/modules/faq/AccordionCard";
-
 import { getAllData } from "@/services/GetServices";
-import Link from "next/link";
 
 const FAQPage = async () => {
   const faqData = await getAllData("faq.json");
@@ -20,13 +18,14 @@ const FAQPage = async () => {
             Still Have Questions?
           </h4>
           <div className="grid md:grid-cols-2 items-center gap-4 md:gap-8">
-            <Link
-              href={
-                "https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
-              }
+            <a
+              href="https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Schedule a meeting about your website project with Shathi Paul"
             >
               <Button_v4 text="Let's talk" className="w-full" />
-            </Link>
+            </a>
 
             <CommonButton text="Send a message" />
           </div>

@@ -40,7 +40,7 @@ const Navbar = () => {
     { name: "Home", link: "/" },
     { name: "Services", link: "/services" },
     { name: "Projects", link: "/projects" },
-    { name: "Blog", link: "/blog" },
+    // { name: "Blog", link: "/blog" },
     { name: "Contact", link: "/#contact" },
   ];
 
@@ -59,7 +59,7 @@ const Navbar = () => {
 
           <nav aria-label="Main navigation w-1/3">
             <ul
-              className={`flex gap-10 py-3 px-8 ${
+              className={`flex gap-8 py-3 px-8 ${
                 scrolled
                   ? "bg-transparent"
                   : "bg-secondary shadow-md rounded-xl"
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     href={data.link}
-                    className={`text-primary font-medium hover:text-gold ${
+                    className={`text-primary font-medium hover:bg-gold/10 p-2 rounded ${
                       pathname === data.link ? "font-semibold" : ""
                     }`}
                   >

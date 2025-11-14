@@ -8,25 +8,29 @@ const Footer = () => {
       icon: <FaLinkedinIn />,
       link: "https://www.linkedin.com/in/shathipaul",
       label: "LinkedIn",
+      color: "hover:text-[#0e76a8]",
     },
     {
       icon: <FaGithub />,
       link: "https://github.com/shathipaul",
       label: "GitHub",
+      color: "hover:text-[#000000]",
     },
-    {
-      icon: <FaInstagram />,
-      link: "https://www.instagram.com/",
-      label: "Instagram",
-    },
+    // {
+    //   icon: <FaInstagram />,
+    //   link: "https://www.instagram.com/",
+    //   label: "Instagram",
+    //   color: "text-[]",
+    // },
     {
       icon: <IoIosMail />,
       link: "mailto:shathi.skr.paul@gmail.com",
       label: "Email",
+      color: "hover:text-[#f2a60c]",
     },
   ];
   return (
-    <footer aria-label="Footer" className="py-6 px-4">
+    <footer aria-label="Footer" className="py-6 px-4 bg-primary/20">
       <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
         <p className="text-sm">
           © 2025{" "}
@@ -35,14 +39,14 @@ const Footer = () => {
           </Link>
           . All rights reserved.
         </p>
-        <div className="text-2xl flex justify-end items-center gap-3 md:gap-4 px-4">
+        <div className="text-2xl flex justify-end items-center gap-3 md:gap-4 px-4 relative z-30">
           {socialLinks.map((data, i) => (
             <a
               key={i}
               href={data.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gold duration-500"
+              className={`duration-500 ${data.color}`}
               aria-label={data.label}
             >
               {data.icon}

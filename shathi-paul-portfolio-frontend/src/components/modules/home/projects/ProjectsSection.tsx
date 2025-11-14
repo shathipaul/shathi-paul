@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import DynamicSwiper from "@/components/swiper/DynamicSwiper";
 import SecondaryButton from "@/components/common/buttons/SecondaryButton";
@@ -43,9 +42,14 @@ const ProjectsSection = async () => {
                 priority
               />
               <div className="w-full h-full flex items-center justify-center bg-black/55 relative z-30 opacity-0 hover:opacity-100 duration-1000 gap-6">
-                <Link href={card.link} target="_blank">
+                <a
+                  href={card.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={card.title}
+                >
                   <SecondaryButton />
-                </Link>
+                </a>
               </div>
             </div>
             <div className="flex flex-col justify-between gap-6 mt-6 px-4">

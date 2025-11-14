@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased bg-secondary text-primary`}
       >
-        <BackgroundSquares />
+        {/* <BackgroundSquares /> */}
         <Toaster richColors={true} />
         {children}
       </body>

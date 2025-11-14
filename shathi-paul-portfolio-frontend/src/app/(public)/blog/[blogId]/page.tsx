@@ -4,7 +4,6 @@ import Image from "next/image";
 import adminImg from "@/assets/images/shathi-paul.jpg";
 import { PiCrownSimpleFill } from "react-icons/pi";
 import { Button_v4 } from "@/components/common/buttons/Button_v4";
-import Link from "next/link";
 
 const BlogDetailPage = async ({
   params,
@@ -15,7 +14,7 @@ const BlogDetailPage = async ({
   // const blog = await getDataById("todos", blogId);
 
   return (
-    <div className="pt-20 lg:pt-28 pb-10">
+    <div className="pt-20 pb-10">
       <div className="max-w-[960px] m-auto py-8 lg:py-16 px-6 md:px-20 my-10 md:my-20 relative z-30">
         <div className="absolute inset-0 bg-gradient-to-b from-secondary via-secondary/95 to-secondary/90 backdrop-blur-xl rounded-2xl shadow-2xl"></div>
 
@@ -367,13 +366,14 @@ const BlogDetailPage = async ({
             Your website shouldn’t just look good — it should perform like a
             growth engine.
           </p>
-          <Link
-            href={
-              "https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
-            }
+          <a
+            href="https://calendly.com/shathi-paul/website-strategy-call-with-shathi-paul"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Schedule a meeting about your website project with Shathi Paul"
           >
-            <Button_v4 text=" Let's talk about your project" />
-          </Link>
+            <Button_v4 text=" Let's talk about your ideas" />
+          </a>
         </div>
       </div>
     </div>

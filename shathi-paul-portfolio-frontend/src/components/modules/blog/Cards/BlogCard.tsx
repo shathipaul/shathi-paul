@@ -22,7 +22,7 @@ const BlogCard = ({ blogData }: { blogData: IBlogData[] }) => {
       {blogData?.map((data, index) => (
         <article
           key={index}
-          className="group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-2xl overflow-hidden relative z-30 bg-gradient-to-br from-white/60 to-white/30 backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 hover:translate-y-[-4px]"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 rounded-2xl overflow-hidden relative z-30 bg-gradient-to-br from-white/60 to-white/30 backdrop-blur-md shadow-lg hover:shadow-xl transition-all duration-300 "
         >
           {/* Image side */}
           <Link
@@ -30,7 +30,7 @@ const BlogCard = ({ blogData }: { blogData: IBlogData[] }) => {
             className="w-full h-full object-cover"
           >
             <Image
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               src={data.image}
               alt={data.title}
               width={1200}

@@ -118,7 +118,7 @@ h6 {
   font-style: normal;
 }
 
-/* body::before {
+body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -126,12 +126,12 @@ h6 {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-image: linear-gradient(#3e2c23, transparent 1px),
-    linear-gradient(to right, #3e2c23, transparent 1px);
+  background-image: linear-gradient(#3e2325, transparent 1px),
+    linear-gradient(to right, #3e2325, transparent 1px);
   background-size: 100% 48px, 51px 100%;
   opacity: 0.15;
   pointer-events: none;
-} */
+}
 
 .shadow-inset-blue {
   box-shadow: inset 1px 1px 5px 0px #6b4f3d60;

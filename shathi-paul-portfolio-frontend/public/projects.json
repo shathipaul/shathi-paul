@@ -1,8 +1,16 @@
 [
   {
+    "img": "https://i.ibb.co.com/4HxgQzn/p4.png",
+    "title": "Better Plate - Travel Management Application",
+    "stack": "|| TypeScript | Next.js | Tailwind CSS | Node.js | MongoDB ||",
+
+    "description": "",
+    "link": "https://travel-buddy-demo.vercel.app/"
+  },
+  {
     "img": "https://i.ibb.co.com/bgPP083W/travel-buddy.png",
     "title": "Travel Buddy - Travel Management Application",
-    "stack": "|| TypeScript | Next.js | Framer Motion | Node.js |  MongoDB ||",
+    "stack": "|| TypeScript | Next.js | Framer Motion | Node.js | MongoDB ||",
 
     "description": "",
     "link": "https://travel-buddy-demo.vercel.app/"
@@ -34,13 +42,5 @@
     "stack": "|| React | Redux | Tailwind.CSS | Node.js | Express | MongoDB ||",
     "description": "",
     "link": "https://journalist-portfolio-website.vercel.app/"
-  },
-
-  {
-    "img": "https://i.ibb.co.com/hRcV1H3R/tap-dolphin.png",
-    "title": "Tap Dolphin - App Landing Page",
-    "stack": "|| HTML | Tailwind.CSS | JavaScript ||",
-    "description": "",
-    "link": "https://tap-dolphin.vercel.app/"
   }
 ]

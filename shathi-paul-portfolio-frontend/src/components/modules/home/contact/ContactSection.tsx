@@ -24,7 +24,21 @@ const ContactSection = () => {
 
   return (
     <div id="contact" className="mb-6 md:mb-8 lg:mb-16 scroll-mt-28">
-      <CommonTitle text="Let's talk about ideas" />
+      <h3
+        className={
+          "text-2xl md:text-4xl lg:text-5xl text-center tracking-wider mb-6 md:mb-8 lg:mb-16"
+        }
+      >
+        Ready to bring your idea online?
+      </h3>
+      <h3
+        className={
+          "text-2xl md:text-4xl lg:text-5xl text-center tracking-wider mb-6 md:mb-8 lg:mb-16"
+        }
+      >
+        Let’s talk.
+      </h3>
+
       <div className="flex flex-col md:flex-row justify-evenly gap-8  items-center">
         <div className="flex flex-col justify-center gap-8">
           {contactData.map((data, index) => (
